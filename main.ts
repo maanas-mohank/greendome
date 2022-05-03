@@ -9,7 +9,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.swamp.swampTile16, function (sprite, location) {
     if (birdcount > 10) {
-        game.splash("The rescued endangered birds are very thankful to you. Good job Agent!")
+        game.splash("The rescued endangered birds are very thankful to you. Good job Agent Ryan!")
         game.over(true, effects.confetti)
         music.playMelody("C E F G A B C5 C5 ", 120)
     } else {
@@ -50,7 +50,7 @@ let mySprite: Sprite = null
 let mySprite2: Sprite = null
 scene.setBackgroundColor(9)
 tiles.setCurrentTilemap(tilemap`level1`)
-game.splash("Your mission is to save all the endangered birds captured by the evil poacher, Black Jack.")
+game.splash("Your mission is to save all the endangered birds captured by the evil poacher, Black Jack. Good luck Agent Ryan!")
 mySprite2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
